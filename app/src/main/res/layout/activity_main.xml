@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_chat"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:background="@drawable/poly_button"
+        android:src="@drawable/icons8_chat_100"
+        android:layout_toStartOf="@+id/btn_home"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="84dp"
+        android:layout_height="74dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:background="@drawable/poly_button"
+        android:src="@drawable/icons8_home_64"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:background="@drawable/poly_button"
+        android:src="@drawable/icons8_user_100"
+        android:layout_toEndOf="@+id/btn_home"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

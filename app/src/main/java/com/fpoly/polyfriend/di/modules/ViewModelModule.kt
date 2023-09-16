@@ -1,0 +1,36 @@
+package com.fpoly.polyfriend.di.modules
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.fpoly.polyfriend.data.model.Test
+import com.fpoly.polyfriend.di.factorys.PolyViewModelFactory
+import com.fpoly.polyfriend.ui.main.home.TestViewModel
+import dagger.Binds
+import dagger.MapKey
+import dagger.Module
+import dagger.Provides
+import dagger.multibindings.IntoMap
+import kotlin.reflect.KClass
+
+@Module
+interface ViewModelModule{
+
+    @Binds
+    fun bindHoneViewModelFactory(factory: PolyViewModelFactory): ViewModelProvider.Factory
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(TestViewModel::class)
+    fun bindTestViewModel(testViewModel: TestViewModel): ViewModel
+
+}
+
+@MustBeDocumented
+@Target(
+    AnnotationTarget.FUNCTION,
+    AnnotationTarget.PROPERTY_GETTER,
+    AnnotationTarget.PROPERTY_SETTER
+)
+@Retention(AnnotationRetention.RUNTIME)
+@MapKey
+annotation class ViewModelKey(val value: KClass<out ViewModel>)

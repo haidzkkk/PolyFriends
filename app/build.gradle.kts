@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.fpoly.polyfriend"
+    namespace = "com.fpoly.polyfriends"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.fpoly.polyfriend"
+        applicationId = "com.fpoly.polyfriends"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Poly friend</string>
+    <string name="app_name">Poly friends</string>
     <string name="hello_blank_fragment">xin chao banl</string>
     <string name="home">Trang chủ</string>
     <string name="chat">Nhắn tin</string>

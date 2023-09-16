@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.fpoly.polyfriends.ui.main.home.HomeFragment"
+        android:name="com.fpoly.polyfriend.ui.main.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.fpoly.polyfriends.ui.main.profile.ProfileFragment"
+        android:name="com.fpoly.polyfriend.ui.main.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.fpoly.polyfriends.ui.main.chat.ChatFragment"
+        android:name="com.fpoly.polyfriend.ui.main.chat.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" >
         <action

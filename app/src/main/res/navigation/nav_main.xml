@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_chatFragment"
-            app:destination="@id/chatFragment" />
+            app:destination="@id/socialMediaFragment" />
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -27,10 +27,10 @@
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/chatFragment"
-        android:name="com.fpoly.polyfriend.ui.main.chat.ChatFragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" >
+        android:id="@+id/socialMediaFragment"
+        android:name="com.fpoly.polyfriend.ui.main.socialMedia.SocialMediaFragment"
+        android:label="fragment_social_media"
+        tools:layout="@layout/fragment_social_media" >
         <action
             android:id="@+id/action_chatFragment_to_homeFragment"
             app:destination="@id/homeFragment" />

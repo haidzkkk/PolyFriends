@@ -57,7 +57,7 @@ class MainActivity : PolyBaseActivity<ActivityMainBinding>(), HomeViewModel.Fact
 
     private fun setupViewpager() {
         views.viewpager.apply {
-            this.adapter = ViewPaggerAdapter(supportFragmentManager, lifecycle)
+            this.adapter = MainViewPagerAdapter(supportFragmentManager, lifecycle)
             this.isUserInputEnabled = false
             this.getChildAt(0).overScrollMode = View.OVER_SCROLL_NEVER;
         }
@@ -79,11 +79,11 @@ class MainActivity : PolyBaseActivity<ActivityMainBinding>(), HomeViewModel.Fact
     private fun setStateButtonViewPager(s : Int){
         views.viewpager.currentItem = s
 
-        views.btnChat.setImageResource(R.drawable.icons8_chat_100)
+        views.btnChat.setImageResource(R.drawable.icons8_social_network_64)
         views.btnHome.setImageResource(R.drawable.icons8_home_64)
         views.btnProfile.setImageResource(R.drawable.icons8_user_100)
         if (s == 0){
-            views.btnChat.setImageResource(R.drawable.icons8_chat_100_select)
+            views.btnChat.setImageResource(R.drawable.icons8_social_network_64_select)
         }else if (s == 1){
             views.btnHome.setImageResource(R.drawable.icons8_home_64_select)
         }else if (s == 2){

@@ -56,6 +56,7 @@ class LoginFragment : PolyBaseFragment<FragmentLoginBinding>(){
         listenClickUI()
     }
 
+
     private fun listenClickUI() {
         views.btnLogin.setOnClickListener{
             if (views.edtUsername.checkNull(resources) or
